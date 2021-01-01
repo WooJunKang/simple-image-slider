@@ -1,0 +1,59 @@
+{
+  "inputs": [
+    {
+      "id": 1,
+      "name": "코끼리",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/713/713996.svg"
+    },
+    {
+      "id": 2,
+      "name": "원숭이",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714014.svg"
+    },
+    {
+      "id": 3,
+      "name": "독수리",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714032.svg"
+    },
+    {
+      "id": 4,
+      "name": "거북이",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714001.svg"
+    },
+    {
+      "id": 5,
+      "name": "코뿔소",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/713/713997.svg"
+    },
+    {
+      "id": 6,
+      "name": "사슴",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714035.svg"
+    },
+    {
+      "id": 7,
+      "name": "카멜레온",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714037.svg"
+    },
+    {
+      "id": 8,
+      "name": "악어",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714031.svg"
+    },
+    {
+      "id": 9,
+      "name": "사자",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714042.svg"
+    },
+    {
+      "id": 10,
+      "name": "고릴라",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714000.svg"
+    },
+    {
+      "id": 11,
+      "name": "얼룩말",
+      "img_url": "https://www.flaticon.com/svg/static/icons/svg/714/714011.svg"
+    }
+  ]
+}

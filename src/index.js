@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { SliderContainer } from './component';
+import './index.css';
+import data from './data/profileList.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SliderContainer data={data.inputs} />
   </React.StrictMode>,
   document.getElementById('root')
 );
