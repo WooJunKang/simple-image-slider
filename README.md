@@ -8,23 +8,23 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 <br/>
 <br/>
 
-### Final View
+## Final View
 
-![simple_image_slider](https://user-images.githubusercontent.com/44981120/103457584-ef6d5700-4d43-11eb-86b8-0273f93dee50.gif)
-
-<br/>
-<br/>
-
-### Slider Logic
-
-<img width="599" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/103457549-a6b59e00-4d43-11eb-8072-9f21435307f4.png">
+<img width="500" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/103457584-ef6d5700-4d43-11eb-86b8-0273f93dee50.gif">
 
 <br/>
 <br/>
 
-### Example in Form
+## Slider Logic
 
-<img width="655" alt="example_in_form" src="https://user-images.githubusercontent.com/44981120/103457520-69e9a700-4d43-11eb-82ac-38c396a07a75.png">
+<img width="500" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/103457549-a6b59e00-4d43-11eb-8072-9f21435307f4.png">
+
+<br/>
+<br/>
+
+## Example in Form
+
+<img width="500" alt="example_in_form" src="https://user-images.githubusercontent.com/44981120/103457520-69e9a700-4d43-11eb-82ac-38c396a07a75.png">
 
 <br/>
 <br/>
