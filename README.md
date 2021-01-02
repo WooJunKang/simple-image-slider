@@ -18,6 +18,9 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 
 ## Example in Form
 [노션 링크](https://www.notion.so/5e63d7ee9455401cb5c3b900f5d21cd1)
+
+<br/>
+
 <img width="500" alt="example_in_form" src="https://user-images.githubusercontent.com/44981120/103457520-69e9a700-4d43-11eb-82ac-38c396a07a75.png">
 
 
