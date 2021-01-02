@@ -1,7 +1,3 @@
-
-
-
-
 export default function NameEntry({ id, name, imgUrl, selectedData, handleNameClick }) {
   const baseStyle = {
     display: "flex",

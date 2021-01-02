@@ -1,24 +1,64 @@
-import React, { useState, useReducer, useCallback, useEffect } from "react";
-import ImageSlider from './ImageSlider.jsx';
-import Selector from './Selector.jsx';
+import React, { useReducer, useEffect } from "react";
+import ImageSlider from './slider/ImageSlider.jsx';
+import Selector from './selector/Selector.jsx';
 import reducer from './reducer/reducer'
+import initialState from './initialState/initialState'
 const HANDLE_NAME_CLiCK = "HANDLE_NAME_CLiCK";
+const HANDLE_SLIDE_BTN = "HANDLE_SLIDE_BTN";
+
 
 function SliderContainer({ data }) {
+  const SLIDER_VIEWER = document.querySelector('.__slider-view-area-viewer');
+  const [state, dispatch] = useReducer(reducer, initialState)
 
-  const [state, dispatch] = useReducer(reducer, { selectedData: [] })
+  ///////////////////////////////////////////////////////////
+  // 추가된 이미지가 6개 초과할 경우 최초 오른쪽 이동 버튼 생성 life cycle
+  useEffect(() => {
+    let way = state.selectedData.length > 6 ? 'RIGHT' : 'NONE';
+    dispatch({
+      type: HANDLE_SLIDE_BTN,
+      way
+    })
 
-  console.log(state);
+  }, [state.selectedData])
+  ///////////////////////////////////////////////////////////
 
+  ////////////////////////////////////////
+  // 셀렉터 내 이름 클릭시 슬라이더에 이미지 toggle
   const handleNameClick = (e) => {
-    console.log(e.target)
-
     dispatch({
       type: HANDLE_NAME_CLiCK,
-      id: Number(e.target.getAttribute('id')),
-      name: e.target.getAttribute('name'),
-      imgUrl: e.target.getAttribute('imgurl')
+      id: Number(e.target.getAttribute('id')), //type: integer
+      name: e.target.getAttribute('name'), // type: string
+      imgUrl: e.target.getAttribute('imgurl') // type: string
     })
+  }
+  ////////////////////////////////////////
+
+  ////////////////////////////////////
+  // 스크롤 위치에 따른 좌우 이동 버튼 toggle
+  const handleScrollLocation = (scrollLoc, max) => {
+    let way;
+    if (scrollLoc === 0) { // 가장 왼쪽에 위치
+      way = 'RIGHT';
+    } else if (scrollLoc < max) { // 중간에 위치
+      way = 'BOTH';
+    } else if (scrollLoc >= max) { // 가장 끝에 위치
+      way = 'LEFT'
+    }
+    dispatch({
+      type: HANDLE_SLIDE_BTN,
+      way
+    })
+  }
+  ////////////////////////////////////
+
+  const handleScrollBtnClick = (e) => {
+    if (e.target.value === 'LEFT') {
+      SLIDER_VIEWER.scrollLeft -= 78 + 1; // 78px = image entry container width (78넣으면 77.33이동함;;)
+    } else if (e.target.value === 'RIGHT') {
+      SLIDER_VIEWER.scrollLeft += 78 + 1;
+    }
   }
 
   return (
@@ -36,15 +76,15 @@ function SliderContainer({ data }) {
         padding: "36px 32px"
       }}
     >
-      <header style={{ marginBottom: "32px", fontSize: "28px" }}>이미지 슬라이더</header>
+      <header style={{ marginBottom: "32px", fontSize: "28px" }}>Simple Image Slider</header>
 
-      <section className="__slider-view-area" style={{ maxWidth: "664px" }}>
-        <ImageSlider data={state.selectedData} />
-      </section>
-
-      <section className="__slider-select-area" style={{ width: "100%", display: "flex", justifyContent: "flex-start" }}>
-        <Selector data={data} selectedData={state.selectedData} handleNameClick={handleNameClick} />
-      </section>
+      <ImageSlider
+        data={state.selectedData}
+        sliderBtn={state.sliderBtn}
+        handleScrollLocation={handleScrollLocation}
+        handleScrollBtnClick={handleScrollBtnClick}
+      />
+      <Selector data={data} selectedData={state.selectedData} handleNameClick={handleNameClick} />
 
     </div>
   )
