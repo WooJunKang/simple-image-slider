@@ -5,15 +5,27 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 `selector`에서 선택된 이미지를 `slider`에서 보여줍니다. <br/>
 추가된 이미지가 6개를 초과하게되면 좌우로 이동할 수 있는 버튼이 생성되고, 나머지 이미지를 확인할 수 있습니다.
 
-## Final View
+<br/>
+<br/>
 
-<img src="https://user-images.githubusercontent.com/44981120/103457412-876a4100-4d42-11eb-807a-b0a03ba5f60a.gif" width="960" height="475"/>
+### Final View
 
-## Slider Logic
+![simple_image_slider](https://user-images.githubusercontent.com/44981120/103457584-ef6d5700-4d43-11eb-86b8-0273f93dee50.gif)
+
+<br/>
+<br/>
+
+### Slider Logic
 
 <img width="599" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/103457549-a6b59e00-4d43-11eb-8072-9f21435307f4.png">
 
-## Example in Form
+<br/>
+<br/>
+
+### Example in Form
 
 <img width="655" alt="example_in_form" src="https://user-images.githubusercontent.com/44981120/103457520-69e9a700-4d43-11eb-82ac-38c396a07a75.png">
+
+<br/>
+<br/>
 
