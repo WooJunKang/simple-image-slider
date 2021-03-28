@@ -15,9 +15,11 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 <br/>
 <br/>
 
+## Logic
+![image-slider-logic](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6a9b146b-ac8f-45b4-bfb0-16ee0a91328f/Untitled.png)
+
 
 ## Example in Form
-[노션 링크](https://www.notion.so/5e63d7ee9455401cb5c3b900f5d21cd1)
 
 <br/>
 
