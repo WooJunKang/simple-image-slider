@@ -15,13 +15,6 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 <br/>
 <br/>
 
-## Logic
-
-<img width="500" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/112744271-7fd0d600-8fd9-11eb-9991-21c82ca6372e.png">
-
-<br/>
-<br/>
-
 ## Example in Form
 
 <br/>
@@ -32,3 +25,9 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 <br/>
 <br/>
 
+## Logic
+
+<img width="500" alt="slider_logic" src="https://user-images.githubusercontent.com/44981120/112744271-7fd0d600-8fd9-11eb-9991-21c82ca6372e.png">
+
+<br/>
+<br/>
