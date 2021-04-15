@@ -31,3 +31,10 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 
 <br/>
 <br/>
+
+## Smooth Scroll: Browser Compatibility
+
+<img width="500" alt="browser_compatibility_mdn" src="https://user-images.githubusercontent.com/44981120/114807328-322dd900-9de1-11eb-9e6f-18aadff02b06.png">
+
+<br/>
+<br/>
