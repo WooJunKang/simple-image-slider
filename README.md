@@ -33,6 +33,7 @@ React-Hooks를 이용한 간단한 이미지 슬라이더.
 <br/>
 
 ## Smooth Scroll: Browser Compatibility
+가로 스크롤 container css에 `scroll-behavior: smooth;`이 적용됐다. 해당 css는 모든 브라우저에서 제공하고 있지 않다. 이 점을 참고하자!
 
 <img width="500" alt="browser_compatibility_mdn" src="https://user-images.githubusercontent.com/44981120/114807328-322dd900-9de1-11eb-9e6f-18aadff02b06.png">
 
