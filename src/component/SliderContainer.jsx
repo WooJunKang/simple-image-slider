@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer, useEffect, useRef } from "react";
 import ImageSlider from './slider/ImageSlider.jsx';
 import Selector from './selector/Selector.jsx';
 import reducer from './reducer/reducer'
@@ -8,7 +8,7 @@ const HANDLE_SLIDE_BTN = "HANDLE_SLIDE_BTN";
 
 
 function SliderContainer({ data }) {
-  const SLIDER_VIEWER = document.querySelector('.__slider-view-area-viewer');
+  const sliderViewer = useRef();
   const [state, dispatch] = useReducer(reducer, initialState)
 
   ///////////////////////////////////////////////////////////
@@ -55,9 +55,9 @@ function SliderContainer({ data }) {
 
   const handleScrollBtnClick = (e) => {
     if (e.target.value === 'LEFT') {
-      SLIDER_VIEWER.scrollLeft -= 78 + 1; // 78px = image entry container width (78넣으면 77.33이동함;;)
+      sliderViewer.current.scrollLeft -= 78 + 1;
     } else if (e.target.value === 'RIGHT') {
-      SLIDER_VIEWER.scrollLeft += 78 + 1;
+      sliderViewer.current.scrollLeft += 78 + 1;
     }
   }
 
@@ -83,6 +83,7 @@ function SliderContainer({ data }) {
         sliderBtn={state.sliderBtn}
         handleScrollLocation={handleScrollLocation}
         handleScrollBtnClick={handleScrollBtnClick}
+        ref={sliderViewer}
       />
       <Selector data={data} selectedData={state.selectedData} handleNameClick={handleNameClick} />
 
