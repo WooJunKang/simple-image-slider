@@ -1,6 +1,7 @@
 import ImageEntry from './ImageEntry.jsx';
+import { forwardRef } from 'react';
 
-export default function ImageSlider({ data, sliderBtn, handleScrollLocation, handleScrollBtnClick }) {
+export default forwardRef(function ImageSlider({ data, sliderBtn, handleScrollLocation, handleScrollBtnClick }, forwardRef) {
 
   console.log(sliderBtn)
 
@@ -50,6 +51,7 @@ export default function ImageSlider({ data, sliderBtn, handleScrollLocation, han
           color: "gray"
         }}
         onScroll={(e) => handleScrollLocation(e.target.scrollLeft, e.target.scrollWidth - e.target.clientWidth)}
+        ref={forwardRef}
       >
 
         {
@@ -90,5 +92,5 @@ export default function ImageSlider({ data, sliderBtn, handleScrollLocation, han
 
     </section >
   )
-}
+})
 
